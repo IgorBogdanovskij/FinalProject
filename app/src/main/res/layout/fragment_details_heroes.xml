@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".presentation.detailsHeroes.ui.DetailsHeroesFragment">
+
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbarDetailsHeroes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="@string/details_screen_hero" />
+
+
+        <TextView
+            android:id="@+id/detailsNameHeroes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detailsImageHeroesCircle"
+            tools:text="name" />
+
+        <TextView
+            android:id="@+id/detailsStatusHeroes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detailsNameHeroes"
+            tools:text="status" />
+
+        <TextView
+            android:id="@+id/detailsSpeciesHeroes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/species"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/detailsGenderHeroes"
+            app:layout_constraintTop_toBottomOf="@+id/detailsStatusHeroes" />
+
+        <TextView
+            android:id="@+id/detailsTypeHeroes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/detailsSpeciesHeroes"
+            app:layout_constraintTop_toBottomOf="@+id/detailsSpeciesHeroes"
+            tools:text="type" />
+
+        <TextView
+            android:id="@+id/detailsGenderHeroes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/gender"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detailsStatusHeroes" />
+
+        <TextView
+            android:id="@+id/detailsGenderTypeHeroes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/gender"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detailsGenderHeroes" />
+
+        <LinearLayout
+            android:id="@+id/detailsOriginHeroesLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detailsGenderTypeHeroes">
+
+            <TextView
+                android:id="@+id/detailsOriginHeroes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="7dp"
+                android:text="@string/origin"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detailsTypeHeroes" />
+
+            <TextView
+                android:id="@+id/detailsOriginNameHeroes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="7dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="17sp"
+                app:layout_constraintStart_toStartOf="@+id/detailsOriginHeroes"
+                app:layout_constraintTop_toBottomOf="@+id/detailsOriginHeroes"
+                tools:text="origin name" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/detailsImageHeroes"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ricky_morty_launch"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarDetailsHeroes" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/detailsImageHeroesCircle"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:layout_marginTop="60dp"
+            android:padding="5dp"
+            android:src="@drawable/ricky_morty_launch"
+            app:layout_constraintEnd_toEndOf="@+id/detailsImageHeroes"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarDetailsHeroes"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+            app:strokeColor="?colorPrimary"
+            app:strokeWidth="5dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/detailsEpisodesRecyclerViewHeroes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/episodesHeroes"
+            tools:listitem="@layout/item_episode" />
+
+        <ProgressBar
+            android:id="@+id/progressBarRecyclerDetailsHero"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="32dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/detailsEpisodesRecyclerViewHeroes" />
+
+        <LinearLayout
+            android:id="@+id/detailsLocationHeroesLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detailsOriginHeroesLinear">
+
+            <TextView
+                android:id="@+id/detailsLocationHeroes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="16dp"
+                android:paddingTop="7dp"
+                android:paddingEnd="16dp"
+                android:text="@string/location"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/detailsLocationNameHeroes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="7dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="17sp"
+                tools:text="location name" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/episodesHeroes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/episodes"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.906"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detailsLocationHeroesLinear" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

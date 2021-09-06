@@ -1,0 +1,177 @@
+<resources>
+    <string name="app_name">RickyAndMorty_FinalProject_Anderson</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="characters">Characters</string>
+    <string name="locations">Locations</string>
+    <string name="filter">Filter</string>
+    <string name="search">Search</string>
+    <string name="name">Name</string>
+    <string name="species">Species</string>
+    <string name="status">Status</string>
+    <string name="status_hero">Status hero</string>
+    <string name="alive">Alive</string>
+    <string name="dead">Dead</string>
+    <string name="alien">Alien</string>
+    <string name="human">Human</string>
+    <string name="species_hero">Species hero</string>
+    <string name="gender">Gender</string>
+    <string name="genderless">Genderless</string>
+    <string name="unknown">Unknown</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="remove_filters">clear all</string>
+    <string name="origin">Origin</string>
+    <string name="location">Location</string>
+    <string name="episodes">Episodes</string>
+    <string name="details_screen_hero">Details hero</string>
+    <string name="details_screen_episode">Details episode</string>
+    <string name="data">Data</string>
+    <string name="episode">Episode</string>
+    <string name="details_screen_location">Details location</string>
+    <string name="type">Type</string>
+    <string name="dimension">Dimension</string>
+    <string name="alive_dead_unknown">alive, dead, unknown</string>
+    <string name="human_alien_unknown">human, alien, unknown</string>
+    <string name="female_male_unknown">female, male, unknown</string>
+    <string name="location_type">Location type</string>
+    <string name="planet_cluster_space_station_microvorse_tv_resort">planet, cluster, space station, microvorse, tv, resort,</string>
+    <string name="unknown_testicle_monster_dimension_etc">unknown, testicle monster dimension etc…</string>
+    <string name="location_dimension">Location dimension</string>
+    <string name="cancel">Cancel</string>
+    <string name="apply">Apply</string>
+
+
+    <string-array name="statusHeroArray">
+        <item>no filter</item>
+        <item>alive</item>
+        <item>dead</item>
+        <item>unknown</item>
+    </string-array>
+
+    <string-array name="speciesHeroArray">
+        <item>no filter</item>
+        <item>human</item>
+        <item>alien</item>
+        <item>unknown</item>
+    </string-array>
+
+    <string-array name="genderHeroArray">
+        <item>no filter</item>
+        <item>female</item>
+        <item>male</item>
+        <item>unknown</item>
+    </string-array>
+
+    <string-array name="episodesEpisodeArray">
+        <item>no filter</item>
+        <item>S01E01</item>
+        <item>S01E02</item>
+        <item>S01E03</item>
+        <item>S01E04</item>
+        <item>S01E05</item>
+        <item>S01E06</item>
+        <item>S01E07</item>
+        <item>S01E08</item>
+        <item>S01E09</item>
+        <item>S01E010</item>
+        <item>S01E011</item>
+        <item>S02E01</item>
+        <item>S02E02</item>
+        <item>S02E03</item>
+        <item>S02E04</item>
+        <item>S02E05</item>
+        <item>S02E06</item>
+        <item>S02E07</item>
+        <item>S02E08</item>
+        <item>S02E09</item>
+        <item>S02E010</item>
+        <item>S03E01</item>
+        <item>S03E02</item>
+        <item>S03E03</item>
+        <item>S03E04</item>
+        <item>S03E05</item>
+        <item>S03E06</item>
+        <item>S03E07</item>
+        <item>S03E08</item>
+        <item>S03E09</item>
+        <item>S03E010</item>
+        <item>S04E01</item>
+        <item>S04E02</item>
+        <item>S04E03</item>
+        <item>S04E04</item>
+        <item>S04E05</item>
+        <item>S04E06</item>
+        <item>S04E07</item>
+        <item>S04E08</item>
+        <item>S04E09</item>
+    </string-array>
+
+    <string-array name="typeLocationsArray">
+        <item>no filter</item>
+        <item>Planet</item>
+        <item>Cluster</item>
+        <item>Space station</item>
+        <item>Microverse</item>
+        <item>TV</item>
+        <item>Resort</item>
+        <item>Fantasy town</item>
+        <item>Dream</item>
+        <item>unknown</item>
+        <item>Menagerie</item>
+        <item>Game</item>
+        <item>Customs</item>
+        <item>Daycare</item>
+        <item>Dwarf planet</item>
+        <item>Miniverse</item>
+        <item>Teenyverse</item>
+        <item>Box</item>
+        <item>Spacecraft</item>
+        <item>Machine</item>
+        <item>Arcade</item>
+        <item>Quadrant</item>
+        <item>Quasar</item>
+        <item>Mount</item>
+        <item>Liquid</item>
+        <item>Convention</item>
+        <item>Woods</item>
+        <item>Diegesis</item>
+        <item>Nightmare</item>
+        <item>Dimension</item>
+        <item>Death Star</item>
+        <item>Reality</item>
+        <item>Spacecraft</item>
+        <item>Base</item>
+    </string-array>
+
+    <string-array name="dimensionLocationsArray">
+        <item>no filter</item>
+        <item>Dimension C-137</item>
+        <item>unknown</item>
+        <item>Post-Apocalyptic Dimension</item>
+        <item>Replacement Dimension</item>
+        <item>Cronenberg Dimension</item>
+        <item>Fantasy Dimension</item>
+        <item>Dimension 5-126</item>
+        <item>Testicle Monster Dimension</item>
+        <item>Cromulon Dimension</item>
+        <item>Dimension C-500A</item>
+        <item>Dimension K-83</item>
+        <item>Eric Stoltz Mask Dimension</item>
+        <item>Giant Telepathic Spiders Dimension</item>
+        <item>Dimension K-22</item>
+        <item>Dimension D-99</item>
+        <item>Dimension D716</item>
+        <item>Dimension D716-B</item>
+        <item>Dimension D716-C</item>
+        <item>Dimension J-22</item>
+        <item>Dimension C-35</item>
+        <item>Pizza Dimension</item>
+        <item>Phone Dimension</item>
+        <item>Chair Dimension</item>
+        <item>Fascist Dimension</item>
+        <item>Tusk Dimension</item>
+        <item>Magic Dimension</item>
+        <item>Unknown Dimension</item>
+        <item>Merged Dimension</item>
+    </string-array>
+</resources>

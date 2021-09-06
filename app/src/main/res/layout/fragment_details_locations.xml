@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".presentation.detailsLocations.ui.DetailsLocationsFragment">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbarDetailsLocations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="@string/details_screen_location" />
+
+        <TextView
+            android:id="@+id/DetailsLocationName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:paddingTop="10dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageLocationDetails"
+            tools:text="Name location" />
+
+        <TextView
+            android:id="@+id/detailsLocationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/characters"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/DetailsLocationDimension" />
+
+        <TextView
+            android:id="@+id/DetailsLocationType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/DetailsLocationTypeTitle"
+            app:layout_constraintTop_toBottomOf="@+id/DetailsLocationTypeTitle"
+            tools:text="Release data" />
+
+
+        <TextView
+            android:id="@+id/DetailsLocationTypeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/type"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/DetailsLocationName" />
+
+        <TextView
+            android:id="@+id/DetailsLocationDimension"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/DetailsLocationDimensionTitle"
+            app:layout_constraintTop_toBottomOf="@+id/DetailsLocationDimensionTitle"
+            tools:text="dimension" />
+
+        <TextView
+            android:id="@+id/DetailsLocationDimensionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/dimension"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/DetailsLocationType"
+            app:layout_constraintTop_toBottomOf="@+id/DetailsLocationType" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/detailsLocationsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detailsLocationTitle"
+            tools:listitem="@layout/item_hero" />
+
+        <ProgressBar
+            android:id="@+id/progressBarRecyclerDetailsLocation"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="32dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/detailsLocationsRecyclerView" />
+
+        <ImageView
+            android:id="@+id/imageLocationDetails"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:paddingTop="15dp"
+            android:src="@drawable/rocket_ship_location"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarDetailsLocations" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

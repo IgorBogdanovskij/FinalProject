@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:elevation="10dp"
+    app:cardCornerRadius="15dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground">
+
+        <TextView
+            android:id="@+id/nameChapter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:hint="@string/name"
+            android:paddingTop="10dp"
+            android:paddingBottom="7dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageChapter" />
+
+        <TextView
+            android:id="@+id/speciesChapter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/species"
+            android:paddingBottom="5dp"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/statusChapter"
+            app:layout_constraintTop_toBottomOf="@+id/statusChapter" />
+
+        <TextView
+            android:id="@+id/statusChapter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/status"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/genderChapter"
+            app:layout_constraintTop_toBottomOf="@+id/genderChapter" />
+
+        <TextView
+            android:id="@+id/genderChapter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/gender"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/nameChapter"
+            app:layout_constraintTop_toBottomOf="@+id/nameChapter" />
+
+        <ImageView
+            android:id="@+id/imageChapter"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/rick_and_morty_splesh"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.586"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progressBarHero"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/imageChapter"
+            app:layout_constraintEnd_toEndOf="@+id/imageChapter"
+            app:layout_constraintStart_toStartOf="@+id/imageChapter"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.heroes.filterHeroesFragment.FilterHeroesFragment">
+
+<!--    <CheckBox-->
+<!--        android:id="@+id/checkStatusHeroAlive"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:text="@string/alive"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/checkStatusHeroDead"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/checkStatusHeroDead" />-->
+
+<!--    <CheckBox-->
+<!--        android:id="@+id/checkStatusHeroDead"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:text="@string/dead"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/checkStatusHeroUnknown"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/checkStatusHeroAlive"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tvStatusHero" />-->
+
+<!--    <CheckBox-->
+<!--        android:id="@+id/checkStatusHeroUnknown"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:text="@string/unknown"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/checkStatusHeroDead"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/checkStatusHeroDead" />-->
+
+<!--    <CheckBox-->
+<!--        android:id="@+id/checkSpeciesHeroAlien"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:text="@string/alien"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/checkSpeciasHeroHuman"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/checkSpeciasHeroHuman" />-->
+
+<!--    <CheckBox-->
+<!--        android:id="@+id/checkSpeciasHeroHuman"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:text="@string/human"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/checkSpeciesHeroAlien"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tvSpeciesHero" />-->
+
+
+    <!--    <CheckBox-->
+<!--        android:id="@+id/checkGenderHeroFemale"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:text="@string/female"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tvGenderHero" />-->
+
+<!--    <CheckBox-->
+<!--        android:id="@+id/checkGenderHeroMale"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:text="@string/male"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/checkGenderHeroFemale" />-->
+
+<!--    <CheckBox-->
+<!--        android:id="@+id/checkGenderHeroUnknown"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:text="@string/unknown"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/checkGenderHeroFemale" />-->
+
+<!--    <CheckBox-->
+<!--        android:id="@+id/checkGenderHeroGenderless"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:text="@string/genderless"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/checkGenderHeroMale" />-->
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarFilterHeroes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="?colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Filters" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvStatusHero"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:gravity="center_horizontal"-->
+<!--        android:text="@string/status_hero"-->
+<!--        android:textSize="30sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/toolbarFilterHeroes" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/statusFilterHeroes"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="@string/alive_dead_unknown"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tvStatusHero" />-->
+<!--    <EditText-->
+<!--        android:id="@+id/speciesFilterHeroes"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="@string/human_alien_unknown"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tvSpeciesHero" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/genderFilterHeroes"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="@string/female_male_unknown"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tvGenderHero" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvSpeciesHero"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center_horizontal"-->
+<!--        android:text="@string/species_hero"-->
+<!--        android:textSize="30sp"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/statusFilterHeroes"-->
+<!--        tools:layout_editor_absoluteX="32dp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvGenderHero"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center_horizontal"-->
+<!--        android:text="@string/gender"-->
+<!--        android:textSize="30sp"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/speciesFilterHeroes"-->
+<!--        tools:layout_editor_absoluteX="0dp" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/removeFilterHero"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="8dp"-->
+<!--        android:text="@string/remove_filters"-->
+<!--        android:textSize="25sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/applyHeroFilter"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="8dp"-->
+<!--        android:text="@string/apply"-->
+<!--        android:textSize="25sp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/removeFilterHero"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
