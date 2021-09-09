@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import com.example.rickyandmorty_finalproject_anderson.App
 import com.example.rickyandmorty_finalproject_anderson.R
 import com.example.rickyandmorty_finalproject_anderson.databinding.ActivityMainBinding
 import com.example.rickyandmorty_finalproject_anderson.presentation.detailsEpisodes.ui.DetailsEpisodesFragment
@@ -117,4 +118,6 @@ class MainActivity : AppCompatActivity(),
     override fun onHideLocationDetails() {
         mMainBinding.bottomNavigation.visibility = View.GONE
     }
+
+
 }

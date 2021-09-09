@@ -14,10 +14,10 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.rickyandmorty_finalproject_anderson.App
 import com.example.rickyandmorty_finalproject_anderson.R
 import com.example.rickyandmorty_finalproject_anderson.data.locale.models.episod.EpisodeEntity
 import com.example.rickyandmorty_finalproject_anderson.databinding.FragmentEpisodsBinding
-import com.example.rickyandmorty_finalproject_anderson.App
 import com.example.rickyandmorty_finalproject_anderson.presentation.detailsEpisodes.ui.DetailsEpisodesFragment
 import com.example.rickyandmorty_finalproject_anderson.presentation.episodes.EpisodesFragmentViewModel
 import com.example.rickyandmorty_finalproject_anderson.presentation.episodes.ui.recycler.AdapterEpisodes
@@ -143,7 +143,7 @@ class EpisodesFragment : Fragment(), FilterDialogEpisodes.EventListener {
         }
 
         viewModel.isLoadingEvent.consume(viewLifecycleOwner) {
-            if (it) {
+            if (it && pageAllEpisodes < 4) {
                 mEpisodesBinding.recyclerViewEpisodes.visibility = View.GONE
                 mEpisodesBinding.progressBarRecyclerEpisode.visibility = View.VISIBLE
             } else {
@@ -198,7 +198,7 @@ class EpisodesFragment : Fragment(), FilterDialogEpisodes.EventListener {
                             isSearching = true
                             viewModel.getEpisodeBySearch(name = strForSearch)
                         } else {
-                            mEpisodesBinding.progressBarRecyclerEpisode.visibility = View.GONE
+                            mEpisodesBinding.emptySearchOrFilterImageEpisodes.visibility = View.GONE
                             pageAllEpisodes = 1
                             isSearching = false
                             mListData.clear()

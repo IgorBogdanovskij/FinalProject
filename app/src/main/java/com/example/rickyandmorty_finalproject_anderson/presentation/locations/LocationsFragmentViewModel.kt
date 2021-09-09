@@ -47,6 +47,8 @@ class LocationsFragmentViewModel @Inject constructor(
     val isLoadingEvent: LiveEvent<Boolean>
         get() = _isLoadingEvent
 
+
+
     init {
         getLocationsByPage(1)
     }
@@ -58,6 +60,7 @@ class LocationsFragmentViewModel @Inject constructor(
                 _isLoadingEvent.send(true)
             }
             .doOnSuccess {
+                Log.d("lol", "getLocationsByPage: $it")
                 _isLoadingEvent.send(false)
             }
             .subscribe(

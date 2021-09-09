@@ -87,6 +87,7 @@ class LocationsFragment : Fragment(), FilterDialogLocations.EventListenerLocatio
                     if (isSearching) {
 
                     } else if (!isSearching && !isFiltering) {
+
                         pageLocations++
                         viewModel.getLocationsByPage(page = pageLocations)
                     } else if (isFiltering) {
@@ -139,7 +140,7 @@ class LocationsFragment : Fragment(), FilterDialogLocations.EventListenerLocatio
         }
 
         viewModel.isLoadingEvent.consume(viewLifecycleOwner) {
-            if (it) {
+            if (it && pageLocations < 7) {
                 mLocationsBinding.recyclerViewLocations.visibility = View.GONE
                 mLocationsBinding.progressBarRecyclerLocation.visibility = View.VISIBLE
             } else {

@@ -9,7 +9,6 @@ import dagger.Module
 import dagger.multibindings.IntoMap
 
 @Module(includes = [ViewModelBuilderModule::class])
-
 abstract class DetailsHeroesModule {
     @Binds
     @IntoMap

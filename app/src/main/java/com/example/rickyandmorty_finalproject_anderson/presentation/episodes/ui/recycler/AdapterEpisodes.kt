@@ -60,7 +60,7 @@ class AdapterEpisodes(
 
         fun bind(episodeEntity: EpisodeEntity) {
 
-            if ((adapterPosition >= itemCount - 1 && itemCount > 19))
+            if ((adapterPosition >= itemCount - 1 && itemCount >= 20 && itemCount < 42))
                 callback.onLoad()
 
             binding.nameEpisode.text = episodeEntity.name

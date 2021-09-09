@@ -64,7 +64,7 @@ class AdapterHeroes(
 
         fun bind(Hero: HeroEntity) {
 
-            if ((adapterPosition >= itemCount - 1 && itemCount > 19))
+            if ((adapterPosition >= itemCount - 1 && itemCount >= 20 && itemCount < 672))
                 callback.onLoad()
 
             binding.nameChapter.text = Hero.name

@@ -57,7 +57,7 @@ class AdapterLocations(
 
         fun bind(locationEntity: LocationEntity) {
 
-            if ((adapterPosition >= itemCount - 1 && itemCount > 19))
+            if ((adapterPosition >= itemCount - 1 && itemCount >= 20 && itemCount < 109))
                 callback.onLoad()
 
             binding.nameLocation.text = locationEntity.name

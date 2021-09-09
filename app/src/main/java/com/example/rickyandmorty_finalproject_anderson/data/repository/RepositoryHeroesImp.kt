@@ -1,6 +1,5 @@
 package com.example.rickyandmorty_finalproject_anderson.data.repository
 
-import android.util.Log
 import com.example.rickyandmorty_finalproject_anderson.data.locale.dao.episod.EpisodeDao
 import com.example.rickyandmorty_finalproject_anderson.data.locale.dao.hero.HeroDao
 import com.example.rickyandmorty_finalproject_anderson.data.locale.dao.location.LocationDao

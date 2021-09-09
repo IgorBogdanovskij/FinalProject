@@ -115,7 +115,7 @@ class HeroesFragment : Fragment(), FilterDialogHeroes.EventListener {
 
             mListData.addAll(it)
             mAdapterHeroes.setData(mListData.toList())
-
+            
         }
 
         viewModel.liveDataFiltersStatus.observe(viewLifecycleOwner, {
@@ -132,7 +132,7 @@ class HeroesFragment : Fragment(), FilterDialogHeroes.EventListener {
 
         viewModel.isSearchResultEmptyEvent.consume(viewLifecycleOwner) {
 
-            if (it) {
+            if (it ) {
                 mCharactersBinding.recyclerViewChapters.visibility = View.GONE
                 mCharactersBinding.emptySearchOrFilterImageHeroes.visibility = View.VISIBLE
             } else {
@@ -142,7 +142,7 @@ class HeroesFragment : Fragment(), FilterDialogHeroes.EventListener {
         }
 
         viewModel.isLoadingEvent.consume(viewLifecycleOwner) {
-            if (it) {
+            if (it && pageAllHeroes < 35) {
                 mCharactersBinding.recyclerViewChapters.visibility = View.GONE
                 mCharactersBinding.progressBarRecyclerHero.visibility = View.VISIBLE
             } else {
