@@ -7,4 +7,6 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "RickyAndMorty_FinalProject_Anderson"
-include ':app'
+include ':presentation'
+include ':domain'
+include ':data'
