@@ -23,7 +23,6 @@ class AdapterHeroes(
 
     private var mListCharacters = listOf<HeroEntity>()
 
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val binding = ItemHeroBinding
             .inflate(LayoutInflater.from(parent.context), parent, false)

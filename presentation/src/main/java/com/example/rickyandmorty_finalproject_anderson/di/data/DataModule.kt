@@ -5,6 +5,7 @@ import androidx.room.Room
 import com.example.data.locale.dao.episod.EpisodeDao
 import com.example.data.locale.dao.hero.HeroDao
 import com.example.data.locale.dao.location.LocationDao
+import com.example.data.locale.dataBase.DataBaseRickyMorty
 import com.example.data.remote.api.episodes.ApiQueryEpisodes
 import com.example.data.remote.api.episodes.ApiQueryEpisodesImp
 import com.example.data.remote.api.heroes.ApiQueryHeroes
@@ -17,7 +18,6 @@ import com.example.data.repository.RepositoryLocationsImp
 import com.example.domain.repository.IRepositoryEpisodes
 import com.example.domain.repository.IRepositoryHeroes
 import com.example.domain.repository.IRepositoryLocations
-import com.example.rickyandmorty_finalproject_anderson.data.locale.dataBase.DataBaseRickyMorty
 import dagger.Module
 import dagger.Provides
 import hu.akarnokd.rxjava3.retrofit.RxJava3CallAdapterFactory

@@ -1,4 +1,4 @@
-package com.example.rickyandmorty_finalproject_anderson.data.locale.dataBase
+package com.example.data.locale.dataBase
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
