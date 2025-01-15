@@ -5,7 +5,7 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "ricky-and-morty"
+rootProject.name = "rick-and-morty"
 include ':presentation'
 include ':domain'
 include ':data'
