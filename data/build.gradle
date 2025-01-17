@@ -32,24 +32,24 @@ android {
 }
 
 dependencies {
-    //testImplementation 'junit:junit:4.13.2'4
+    project(":data")
+    project(":domain")
 
-    kapt "androidx.room:room-compiler:2.6.1"
-    implementation "androidx.room:room-rxjava3:2.6.1"
+    // Network
+    implementation libs.retrofit
+    implementation libs.retrofit.converter.gson
+    implementation libs.okhttp
+    implementation libs.okhttp.logging.interceptor
 
-    api 'com.squareup.retrofit2:retrofit:2.10.0'
-    api "com.squareup.okhttp3:okhttp:5.0.0-alpha.14"
-    api "com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.14"
+    // DataBase
+    implementation libs.room.rxjava3
+    kapt libs.room.compiler
 
-    //RxJava
-    implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
-    implementation 'io.reactivex.rxjava3:rxjava:3.1.0'
-    implementation "com.github.akarnokd:rxjava3-retrofit-adapter:3.0.0"
-    implementation 'androidx.room:room-rxjava3:2.6.1'
+    // RxJava
+    implementation libs.rxandroid
+    implementation libs.rxjava
+    implementation libs.rxjava3.retrofit.adapter
 
-    //Retrofit
-    implementation 'com.squareup.retrofit2:retrofit:2.10.0'
-    implementation 'com.squareup.retrofit2:converter-gson:2.10.0'
-
-    api project(":domain")
+    // Tests
+//    testImplementation 'junit:junit:4.13.2'4
 }

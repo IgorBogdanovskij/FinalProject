@@ -14,7 +14,7 @@ import io.reactivex.rxjava3.disposables.CompositeDisposable
 import javax.inject.Inject
 
 class EpisodesFragmentViewModel @Inject constructor(
-    private val episodesInteractor: com.example.rickyandmorty.domain.interactors.IEpisodesInteractor
+    private val episodesInteractor: IEpisodesInteractor
 ) : ViewModel() {
 
     private val disposables: CompositeDisposable = CompositeDisposable()
