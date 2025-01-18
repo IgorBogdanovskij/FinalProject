@@ -70,7 +70,7 @@ class EpisodesFragment : Fragment(), FilterDialogEpisodes.EventListener {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         mEpisodesBinding = FragmentEpisodsBinding.inflate(layoutInflater)
         return mEpisodesBinding.root
     }
