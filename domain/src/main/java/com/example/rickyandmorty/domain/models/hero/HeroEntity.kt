@@ -1,7 +1,6 @@
 package com.example.rickyandmorty.domain.models.hero
 
 import android.os.Parcelable
-import android.webkit.WebStorage
 import androidx.room.Embedded
 import androidx.room.Entity
 import androidx.room.PrimaryKey

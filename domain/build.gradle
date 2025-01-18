@@ -31,8 +31,7 @@ android {
 }
 
 dependencies {
-    api 'io.reactivex.rxjava3:rxjava:3.1.0'
-    api "com.google.code.gson:gson:2.10.1"
-    api "androidx.room:room-runtime:2.6.1"
-    api 'com.google.dagger:dagger:2.51'
+    implementation libs.rxjava
+    implementation libs.gson
+    implementation libs.room
 }
