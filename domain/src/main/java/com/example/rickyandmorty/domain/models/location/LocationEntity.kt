@@ -6,7 +6,6 @@ import androidx.room.PrimaryKey
 import kotlinx.parcelize.Parcelize
 
 @Entity(tableName = LocationEntity.TABLE_NAME)
-@Parcelize
 data class LocationEntity(
 
     @PrimaryKey(autoGenerate = true)
@@ -17,7 +16,7 @@ data class LocationEntity(
     val created: String,
     val residents: List<String>,
     val url: String
-):Parcelable {
+) {
     companion object {
         const val TABLE_NAME = "location_table"
     }

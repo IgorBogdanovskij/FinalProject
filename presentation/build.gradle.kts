@@ -8,12 +8,12 @@ plugins {
 
 android {
     namespace = "com.example.rickyandmorty"
-    compileSdk = 35
+    compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
         applicationId = "com.example.rickyandmorty"
-        minSdk = 21
-        targetSdk = 35
+        minSdk = libs.versions.minSdk.get().toInt()
+        targetSdk = libs.versions.targetSdk.get().toInt()
         versionCode = 1
         versionName = "1.0"
 
@@ -52,19 +52,18 @@ dependencies {
     // Jetpack Compose
     implementation(platform(libs.compose.bom))
     implementation(libs.compose.ui)
+    debugImplementation(libs.compose.ui.tooling)
     implementation(libs.compose.ui.preview)
     implementation(libs.compose.material)
     implementation(libs.compose.activity)
 
+    // Views
     implementation(libs.androidx.compat)
     implementation(libs.material)
     implementation(libs.constraint.layout)
     implementation(libs.live.data.ktx)
     implementation(libs.view.model)
     implementation(libs.swipe.refresh.layout)
-
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
 
     // Retrofit
     implementation(libs.retrofit)
@@ -74,7 +73,7 @@ dependencies {
     implementation(libs.glide)
 
     // Room
-    implementation(libs.room)
+    implementation(libs.room.runtime)
     ksp(libs.room.compiler)
 
     // ktx android
@@ -99,7 +98,6 @@ dependencies {
     ksp(libs.google.dagger.compiler)
     implementation(libs.google.dagger)
 
-    // Modules
-    api(project(":domain"))
-    api(project(":data"))
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.junit)
 }

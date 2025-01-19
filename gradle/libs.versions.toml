@@ -34,7 +34,6 @@ swipeRefreshLayout = "1.1.0"
 javaxInject = "1"
 hilt = "2.51"
 dagger = "2.51"
-daggerCompiler = "2.51"
 
 # Data
 room = "2.6.1"
@@ -95,10 +94,10 @@ javax-inject = { module = "javax.inject:javax.inject", version.ref = "javaxInjec
 hilt = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
 hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hilt" }
 google-dagger = { module = "com.google.dagger:dagger", version.ref = "dagger" }
-google-dagger-compiler = { module = "com.google.dagger:dagger-compiler", version.ref = "daggerCompiler" }
+google-dagger-compiler = { module = "com.google.dagger:dagger-compiler", version.ref = "dagger" }
 
 # Data
-room = { module = "androidx.room:room-runtime", version.ref = "room" }
+room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
 room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
 room-paging = { module = "androidx.room:room-paging", version.ref = "room" }
 room-rxjava3 = { module = "androidx.room:room-rxjava3", version.ref = "roomRxjava3" }
@@ -115,6 +114,7 @@ okhttp-logging-interceptor = { module = "com.squareup.okhttp3:logging-intercepto
 # JetpackCompose
 compose-bom = { module = "androidx.compose:compose-bom", version.ref = "compose" }
 compose-ui = { module = "androidx.compose.ui:ui" }
+compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
 compose-ui-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
 compose-material = { module = "androidx.compose.material3:material3" }
 compose-activity = { module = "androidx.activity:activity-compose" }

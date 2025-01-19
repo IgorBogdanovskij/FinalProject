@@ -45,7 +45,7 @@ class DetailsEpisodesFragment : Fragment(R.layout.fragment_details_episodes) {
         mOnHideShowBottomNavigationFilterEpisodes =
             context as OnHideShowBottomNavigationFilterEpisodes
 
-        mEpisodeEntity = arguments?.getParcelable(KEY_BUNDLE_EPISODE)!!
+//        mEpisodeEntity = arguments?.getParcelable(KEY_BUNDLE_EPISODE)
 
         initDagger()
     }
@@ -144,10 +144,10 @@ class DetailsEpisodesFragment : Fragment(R.layout.fragment_details_episodes) {
         fun newInstance(episodeEntity: EpisodeEntity): DetailsEpisodesFragment {
             return DetailsEpisodesFragment().apply {
 
-                val bundle = Bundle().apply {
-                    putParcelable(KEY_BUNDLE_EPISODE, episodeEntity)
-                }
-                arguments = bundle
+//                val bundle = Bundle().apply {
+//                    putParcelable(KEY_BUNDLE_EPISODE, episodeEntity)
+//                }
+//                arguments = bundle
 
             }
         }

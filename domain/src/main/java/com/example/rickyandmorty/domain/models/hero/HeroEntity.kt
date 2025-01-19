@@ -7,7 +7,6 @@ import androidx.room.PrimaryKey
 import kotlinx.parcelize.Parcelize
 
 @Entity(tableName = HeroEntity.TABLE_NAME)
-@Parcelize
 data class HeroEntity(
 
     @PrimaryKey(autoGenerate = true)
@@ -25,7 +24,7 @@ data class HeroEntity(
     val url: String,
     val created: String,
     val episode: List<String>
-):Parcelable {
+) {
     companion object {
         const val TABLE_NAME = "hero_table"
     }

@@ -6,7 +6,6 @@ import androidx.room.Embedded
 import com.google.gson.annotations.SerializedName
 import kotlinx.parcelize.Parcelize
 
-@Parcelize
 data class Location(
 
     @ColumnInfo (name = "name_location")
@@ -17,4 +16,4 @@ data class Location(
     @SerializedName("url")
     val urlLocation: String
 
-):Parcelable
+)

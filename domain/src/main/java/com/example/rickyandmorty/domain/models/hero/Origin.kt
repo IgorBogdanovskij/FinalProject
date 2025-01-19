@@ -6,7 +6,6 @@ import androidx.room.Embedded
 import com.google.gson.annotations.SerializedName
 import kotlinx.parcelize.Parcelize
 
-@Parcelize
 data class Origin(
 
     @ColumnInfo(name = "name_origin")
@@ -16,4 +15,4 @@ data class Origin(
     @ColumnInfo(name = "url_origin")
     @SerializedName("url")
     val urlOrigin: String
-):Parcelable
+)

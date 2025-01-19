@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.rickyandmorty">
         <activity
-            android:name=".presentation.activity.SplashScreen"
+            android:name=".presentation.activity.SplashActivity"
             android:exported="true"
             android:theme="@style/SplashScreen">
             <intent-filter>
@@ -23,6 +23,9 @@
         </activity>
         <activity
             android:name=".presentation.activity.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".presentation.activity.ComposeActivity"
             android:exported="true" />
     </application>
 

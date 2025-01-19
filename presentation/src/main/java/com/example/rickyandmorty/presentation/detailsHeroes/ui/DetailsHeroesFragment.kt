@@ -47,7 +47,7 @@ class DetailsHeroesFragment : Fragment(R.layout.fragment_details_heroes) {
     override fun onAttach(context: Context) {
         super.onAttach(context)
 
-        mHero = arguments?.getParcelable(KEY_BUNDLE_HERO)!!
+//        mHero = arguments?.getParcelable(KEY_BUNDLE_HERO)!!
         mOnHideShowBottomNavigationFilterHeroes = context as OnHideShowBottomNavigationFilterHeroes
         mOnClickBackDetailsHeroes = context as OnClickBackDetailsHeroes
         initDagger()
@@ -202,7 +202,7 @@ class DetailsHeroesFragment : Fragment(R.layout.fragment_details_heroes) {
         fun newInstance(hero: HeroEntity): DetailsHeroesFragment {
             return DetailsHeroesFragment().apply {
                 val bundle = Bundle().apply {
-                    putParcelable(KEY_BUNDLE_HERO, hero)
+//                    putParcelable(KEY_BUNDLE_HERO, hero)
                 }
                 arguments = bundle
             }

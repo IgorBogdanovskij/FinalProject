@@ -43,7 +43,7 @@ class DetailsLocationsFragment : Fragment(R.layout.fragment_details_locations) {
         mOnHideShowBottomNavigationFilterLocation =
             context as OnHideShowBottomNavigationFilterLocation
         mOnClickBackDetailsLocation = context as OnClickBackDetailsLocation
-        mLocation = arguments?.getParcelable(KEY_BUNDLE_LOCATION)!!
+//        mLocation = arguments?.getParcelable(KEY_BUNDLE_LOCATION)!!
         initDagger()
     }
 
@@ -142,7 +142,7 @@ class DetailsLocationsFragment : Fragment(R.layout.fragment_details_locations) {
         fun newInstance(locationEntity: LocationEntity) =
             DetailsLocationsFragment().apply {
                 arguments = Bundle().apply {
-                    putParcelable(KEY_BUNDLE_LOCATION, locationEntity)
+//                    putParcelable(KEY_BUNDLE_LOCATION, locationEntity)
                 }
             }
     }

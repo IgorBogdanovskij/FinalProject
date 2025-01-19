@@ -1,5 +1,6 @@
 package com.example.rickyandmorty.presentation.activity
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
@@ -31,6 +32,8 @@ class MainActivity : AppCompatActivity(),
         super.onCreate(savedInstanceState)
         mMainBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(mMainBinding.root)
+
+        startActivity(Intent(this, ComposeActivity::class.java))
 
         supportFragmentManager.beginTransaction()
             .replace(R.id.containerFragments, HeroesFragment.newInstance())
