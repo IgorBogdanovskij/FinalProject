@@ -12,7 +12,6 @@
         <item name="colorOnSecondary">@color/secondaryDarkColor</item>
         <item name="android:textColorSecondary">@color/secondaryTextColor</item>
         <item name="bottomNavigationStyle">@style/bottomNavigationStyle</item>
-        <item name="android:windowFullscreen">true</item>
         <!-- Status bar color. -->
     </style>
 
@@ -27,8 +26,6 @@
         <item name="colorSecondaryVariant">@color/secondaryLightColor</item>
         <item name="colorOnSecondary">@color/secondaryDarkColor</item>
         <item name="android:textColorSecondary">@color/secondaryTextColor</item>
-        <item name="android:windowFullscreen">true</item>
-        <!--        <item name="android:windowFullscreen">true</item>-->
         <!-- Status bar color. -->
     </style>
 

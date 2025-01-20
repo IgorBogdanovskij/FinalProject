@@ -1,10 +1,10 @@
-package com.example.rickyandmorty.di.domain
+package com.example.rickyandmorty.presentation.di.domain
 
 import com.example.rickyandmorty.domain.interactors.*
 import com.example.rickyandmorty.domain.repository.IRepositoryEpisodes
 import com.example.rickyandmorty.domain.repository.IRepositoryHeroes
 import com.example.rickyandmorty.domain.repository.IRepositoryLocations
-import com.example.rickyandmorty.di.data.DataModule
+import com.example.rickyandmorty.presentation.di.data.DataModule
 import dagger.Module
 import dagger.Provides
 

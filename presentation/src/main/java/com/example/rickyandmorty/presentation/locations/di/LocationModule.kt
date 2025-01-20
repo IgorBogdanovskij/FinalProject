@@ -1,8 +1,8 @@
 package com.example.rickyandmorty.presentation.locations.di
 
 import androidx.lifecycle.ViewModel
-import com.example.rickyandmorty.di.viewModel.ViewModelBuilderModule
-import com.example.rickyandmorty.di.viewModel.ViewModelKey
+import com.example.rickyandmorty.presentation.di.viewModel.ViewModelBuilderModule
+import com.example.rickyandmorty.presentation.di.viewModel.ViewModelKey
 import com.example.rickyandmorty.presentation.locations.LocationsFragmentViewModel
 import dagger.Binds
 import dagger.Module

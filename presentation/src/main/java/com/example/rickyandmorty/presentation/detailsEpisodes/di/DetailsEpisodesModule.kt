@@ -1,8 +1,8 @@
 package com.example.rickyandmorty.presentation.detailsEpisodes.di
 
 import androidx.lifecycle.ViewModel
-import com.example.rickyandmorty.di.viewModel.ViewModelBuilderModule
-import com.example.rickyandmorty.di.viewModel.ViewModelKey
+import com.example.rickyandmorty.presentation.di.viewModel.ViewModelBuilderModule
+import com.example.rickyandmorty.presentation.di.viewModel.ViewModelKey
 import com.example.rickyandmorty.presentation.detailsEpisodes.DetailsEpisodesFragmentViewModel
 import dagger.Binds
 import dagger.Module

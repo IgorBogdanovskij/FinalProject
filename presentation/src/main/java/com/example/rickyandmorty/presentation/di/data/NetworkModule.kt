@@ -1,4 +1,4 @@
-package com.example.rickyandmorty.di.data
+package com.example.rickyandmorty.presentation.di.data
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder

@@ -1,9 +1,9 @@
-package com.example.rickyandmorty.di
+package com.example.rickyandmorty.presentation.di
 
 import android.content.Context
-import com.example.rickyandmorty.di.data.DataModule
-import com.example.rickyandmorty.di.data.NetworkModule
-import com.example.rickyandmorty.di.domain.DomainModule
+import com.example.rickyandmorty.presentation.di.data.DataModule
+import com.example.rickyandmorty.presentation.di.data.NetworkModule
+import com.example.rickyandmorty.presentation.di.domain.DomainModule
 import com.example.rickyandmorty.presentation.detailsEpisodes.di.DetailsEpisodesComponent
 import com.example.rickyandmorty.presentation.detailsHeroes.di.DetailsHeroesComponent
 import com.example.rickyandmorty.presentation.detailsLocations.di.DetailsLocationComponent

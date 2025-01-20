@@ -1,4 +1,4 @@
-package com.example.rickyandmorty.di.viewModel
+package com.example.rickyandmorty.presentation.di.viewModel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

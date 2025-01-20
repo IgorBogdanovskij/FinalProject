@@ -1,4 +1,4 @@
-package com.example.rickyandmorty.di.data
+package com.example.rickyandmorty.presentation.di.data
 
 import android.content.Context
 import androidx.room.Room
